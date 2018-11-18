@@ -1,8 +1,11 @@
 import assert from 'assert';
 import {parseCode} from '../src/js/code-analyzer';
+import {getModel} from '../src/js/code-analyzer';
 
 describe('The javascript parser', () => {
     it('is parsing an empty function correctly', () => {
+        parseCode('');
+        model = ge
         assert.equal(
             JSON.stringify(parseCode('')),
             '{"type":"Program","body":[],"sourceType":"script"}'
